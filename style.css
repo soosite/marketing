@@ -1,0 +1,327 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #080d19;
+  color: #f4f7ff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  height: 75px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #080d19f5;
+  border-bottom: 1px solid #23334b;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+}
+
+.logo span, h1 span, h2 span {
+  color: #438cff;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #aab8ce;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover { color: white; }
+
+.menu-btn {
+  display: none;
+  background: none;
+  color: white;
+  border: 0;
+  font-size: 25px;
+}
+
+.hero {
+  padding: 100px 9%;
+  background: radial-gradient(
+    ellipse at 80% 20%,
+    #173b70,
+    transparent 50%
+  );
+}
+
+.tag {
+  color: #78adff;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(40px, 6vw, 65px);
+  line-height: 1.1;
+  max-width: 800px;
+}
+
+.hero p {
+  color: #a5b3c8;
+  max-width: 600px;
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #347bfa;
+  padding: 14px 23px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px 8px 5px 0;
+  border: none;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: #165bd6;
+  transform: translateY(-2px);
+}
+
+.secondary {
+  background: #18253a;
+  border: 1px solid #34445e;
+}
+
+.stats {
+  display: flex;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.stats div { display: grid; }
+
+.stats strong {
+  color: #78adff;
+  font-size: 28px;
+}
+
+.stats small { color: #9aa9bf; }
+
+.section {
+  padding: 85px 9%;
+}
+
+.section h2 {
+  font-size: clamp(30px, 4vw, 45px);
+  margin: 12px 0;
+}
+
+.description {
+  color: #9aa9bf;
+  max-width: 650px;
+  margin-bottom: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  padding: 27px;
+  border: 1px solid #23334b;
+  background: #101a2b;
+  border-radius: 13px;
+  transition: .2s;
+}
+
+.card:hover {
+  border-color: #438cff;
+  transform: translateY(-5px);
+}
+
+.icon { font-size: 30px; }
+.card h3 { margin: 13px 0; }
+.card p { color: #9aa9bf; font-size: 14px; }
+
+.modules { background: #0b1423; }
+
+.progress-box {
+  padding: 20px;
+  background: #101a2b;
+  border: 1px solid #23334b;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+#progressText { color: #78adff; }
+
+.progress-track {
+  height: 8px;
+  background: #29364a;
+  border-radius: 20px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0;
+  background: #438cff;
+  transition: .3s;
+}
+
+.module {
+  background: #101a2b;
+  border: 1px solid #23334b;
+  border-radius: 10px;
+  margin-bottom: 13px;
+  overflow: hidden;
+}
+
+.module-title {
+  width: 100%;
+  background: transparent;
+  color: white;
+  border: 0;
+  padding: 20px;
+  text-align: left;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.lessons {
+  display: none;
+  padding: 5px 20px 20px;
+}
+
+.module.active .lessons { display: block; }
+
+.lessons label {
+  display: block;
+  padding: 12px;
+  margin-top: 8px;
+  background: #19273c;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.lessons input {
+  accent-color: #438cff;
+  margin-right: 8px;
+}
+
+.price-section { text-align: center; }
+
+.price-card {
+  max-width: 390px;
+  margin: 35px auto 20px;
+  padding: 30px;
+  text-align: left;
+  background: linear-gradient(145deg, #172b48, #101a2b);
+  border: 1px solid #438cff;
+  border-radius: 15px;
+}
+
+.price-card>p {
+  font-size: 11px;
+  color: #9db8df;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 47px;
+  font-weight: 900;
+  margin: 15px 0 0;
+}
+
+.price-card>small { color: #9aa9bf; }
+
+.price-card ul {
+  list-style: none;
+  padding: 20px 0;
+  margin: 20px 0;
+  border-top: 1px solid #34445e;
+  border-bottom: 1px solid #34445e;
+}
+
+.price-card li {
+  padding: 7px 0;
+  font-size: 13px;
+}
+
+.full {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.disclaimer {
+  color: #8c9bb0;
+  font-size: 11px;
+  max-width: 600px;
+  margin: auto;
+}
+
+footer {
+  padding: 35px 9%;
+  border-top: 1px solid #23334b;
+  color: #9aa9bf;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+footer p { flex: 1; }
+
+@media(max-width:750px) {
+  .menu-btn { display: block; }
+  nav {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background: #101a2b;
+    flex-direction: column;
+  }
+  nav.show { display: flex; }
+  .hero { padding: 75px 6%; }
+  .hero h1 { font-size: 43px; }
+  .section { padding: 65px 6%; }
+  .cards { grid-template-columns: 1fr; }
+  .stats { gap: 20px; flex-wrap: wrap; }
+  .stats strong { font-size: 23px; }
+}
