@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Pro | Marketing Digital</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#inicio">DIGITAL<span>PRO</span></a>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <a href="#inicio">Início</a>
+    <a href="#curso">O curso</a>
+    <a href="#modulos">Módulos</a>
+    <a href="#preco">Inscrição</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="tag">FORMAÇÃO EM MARKETING DIGITAL</div>
+  <h1>Transforme conhecimento em <span>oportunidades digitais.</span></h1>
+  <p>
+    Aprenda a trabalhar com marketing digital, criar infoprodutos,
+    desenvolver estratégias e entender como vender pela internet.
+    Comece do zero e desenvolva suas habilidades.
+  </p>
+  <a href="#modulos" class="btn">Começar a aprender →</a>
+  <a href="#curso" class="btn secondary">Conhecer o curso</a>
+  <div class="stats">
+    <div><strong>06</strong><small>Módulos</small></div>
+    <div><strong>24</strong><small>Aulas-guia</small></div>
+    <div><strong>100%</strong><small>Online</small></div>
+  </div>
+</section>
+
+<section id="curso" class="section">
+  <div class="tag">SOBRE O CURSO</div>
+  <h2>Aprenda a construir sua presença no <span>mercado digital.</span></h2>
+  <p class="description">
+    Uma formação educativa para entender o mercado digital,
+    desenvolver produtos e aprender estratégias de divulgação e vendas.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>Marketing digital</h3>
+      <p>Conheça o mercado, o público e as estratégias de divulgação.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📚</div>
+      <h3>Infoprodutos</h3>
+      <p>Aprenda a planejar e-books, cursos e materiais digitais.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📈</div>
+      <h3>Vendas online</h3>
+      <p>Entenda ofertas, atendimento, divulgação e conversão.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section modules" id="modulos">
+  <div class="tag">TRILHA DE APRENDIZADO</div>
+  <h2>O que você vai <span>aprender.</span></h2>
+
+  <div class="progress-box">
+    <div class="progress-label">
+      <span>Seu progresso</span>
+      <strong id="progressText">0%</strong>
+    </div>
+    <div class="progress-track">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+
+  <div id="moduleContainer">
+
+    <article class="module">
+      <button class="module-title">01 — Fundamentos do marketing digital <span>⌄</span></button>
+      <div class="lessons">
+        <label><input type="checkbox" class="lesson-check"> O que é marketing digital?</label>
+        <label><input type="checkbox" class="lesson-check"> Público-alvo e persona</label>
+        <label><input type="checkbox" class="lesson-check"> Posicionamento de marca</label>
+        <label><input type="checkbox" class="lesson-check"> Jornada do cliente</label>
+      </div>
+    </article>
+
+    <article class="module">
+      <button class="module-title">02 — Criação de infoprodutos <span>⌄</span></button>
+      <div class="lessons">
+        <label><input type="checkbox" class="lesson-check"> O que são infoprodutos?</label>
+        <label><input type="checkbox" class="lesson-check"> Criando um e-book</label>
+        <label><input type="checkbox" class="lesson-check"> Planejando um curso digital</label>
+        <label><input type="checkbox" class="lesson-check"> Organização e entrega</label>
+      </div>
+    </article>
+
+    <article class="module">
+      <button class="module-title">03 — Marca e ofertas <span>⌄</span></button>
+      <div class="lessons">
+        <label><input type="checkbox" class="lesson-check"> Criando sua identidade</label>
+        <label><input type="checkbox" class="lesson-check"> Benefícios do produto</label>
+        <label><input type="checkbox" class="lesson-check"> Precificação</label>
+        <label><input type="checkbox" class="lesson-check"> Criando uma página de vendas</label>
+      </div>
+    </article>
+
+    <article class="module">
+      <button class="module-title">04 — Redes sociais e conteúdo <span>⌄</span></button>
+      <div class="lessons">
+        <label><input type="checkbox" class="lesson-check"> Marketing no Instagram</label>
+        <label><input type="checkbox" class="lesson-check"> Estratégias para TikTok</label>
+        <label><input type="checkbox" class="lesson-check"> Criando vídeos de divulgação</label>
+        <label><input type="checkbox" class="lesson-check"> Calendário de conteúdo</label>
+      </div>
+    </article>
+
+    <article class="module">
+      <button class="module-title">05 — Vendas e atendimento <span>⌄</span></button>
+      <div class="lessons">
+        <label><input type="checkbox" class="lesson-check"> Como funciona uma venda online</label>
+        <label><input type="checkbox" class="lesson-check"> Atendimento pelo WhatsApp</label>
+        <label><input type="checkbox" class="lesson-check"> Como apresentar ofertas</label>
+        <label><input type="checkbox" class="lesson-check"> Pós-venda e relacionamento</label>
+      </div>
+    </article>
+
+    <article class="module">
+      <button class="module-title">06 — Estratégia e crescimento <span>⌄</span></button>
+      <div class="lessons">
+        <label><input type="checkbox" class="lesson-check"> Métricas de marketing</label>
+        <label><input type="checkbox" class="lesson-check"> Planejamento financeiro</label>
+        <label><input type="checkbox" class="lesson-check"> Melhorando resultados</label>
+        <label><input type="checkbox" class="lesson-check"> Projeto prático final</label>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="section price-section" id="preco">
+  <div class="tag">ACESSO AO CURSO</div>
+  <h2>Comece sua jornada <span>digital.</span></h2>
+  <div class="price-card">
+    <p>DIGITAL PRO — FORMAÇÃO COMPLETA</p>
+    <div class="price">R$ 67,00</div>
+    <small>Pagamento único</small>
+    <ul>
+      <li>✓ 6 módulos de aprendizado</li>
+      <li>✓ 24 aulas-guia</li>
+      <li>✓ Exercícios práticos</li>
+      <li>✓ Acesso pelo celular e computador</li>
+    </ul>
+    <a href="#" id="buyButton" class="btn full">QUERO ME INSCREVER →</a>
+    <small>Pagamento e entrega sujeitos à configuração da plataforma.</small>
+  </div>
+  <p class="disclaimer">
+    O curso é educativo e não garante vendas ou resultados financeiros.
+  </p>
+</section>
+
+<footer>
+  <a class="logo" href="#inicio">DIGITAL<span>PRO</span></a>
+  <p>Aprenda. Pratique. Evolua.</p>
+  <small>© 2026 Digital Pro. Todos os direitos reservados.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
